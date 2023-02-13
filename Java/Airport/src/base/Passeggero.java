@@ -8,12 +8,13 @@ public class Passeggero extends Persona{
 	
 	private String idVolo;
 	private boolean assicurazioneVolo;
+	private Volo volo;
 	private int prezzoBiglietto;
 	private int totaleVolo;
 	private boolean checkIn;
-	private LocalDate secondaData;
 	
 	private static List<Passeggero> listaPasseggeri = new ArrayList<>();
+	private boolean ritardo;
 	
 	
 	public Passeggero(String nome, String cognome, LocalDate dataDiNascita, String numeroTelefono, String email,
@@ -23,10 +24,12 @@ public class Passeggero extends Persona{
 		if(volo == null)
 			throw new AirportException("Errore inserimento dati passaggero");
 		
-		this.idVolo = volo.idVolo;
+		this.idVolo = volo.getIdVolo();
+		this.volo = volo;
 		this.assicurazioneVolo = assicurazione;
 		this.prezzoBiglietto = compagniaVolo.getCostoBase();
 		this.checkIn = false;
+		this.ritardo = false;
 		
 		if(assicurazione == false)
 			this.totaleVolo = compagniaVolo.getCostoBase();
@@ -45,9 +48,10 @@ public class Passeggero extends Persona{
 		if(volo == null)
 			throw new AirportException("Errore inserimento dati passaggero");
 		
-		this.idVolo = volo.idVolo;
+		this.idVolo = volo.getIdVolo();
 		this.assicurazioneVolo = assicurazione;
 		this.prezzoBiglietto = compagniaVolo.getCostoBase();
+		this.ritardo = false;
 		this.checkIn = false;
 		
 		if(assicurazione == false)
@@ -59,5 +63,55 @@ public class Passeggero extends Persona{
 		
 	}
 
+	
+	
+	public void comunicazioneRitardo() {
+		this.ritardo = true;
+	}
+	
+	
+	
+	public void setAllCheckIn() {
+		listaPasseggeri.forEach(x -> x.checkIn = true);
+	}
+	
+	
 
+	public String getIdVolo() {
+		return idVolo;
+	}
+
+	public void setIdVolo(String idVolo) {
+		this.idVolo = idVolo;
+	}
+
+	public boolean isAssicurazioneVolo() {
+		return assicurazioneVolo;
+	}
+
+	public boolean getRitardo() {
+		return this.ritardo;
+	}
+	
+	public void setAssicurazioneVolo(boolean assicurazioneVolo) {
+		this.assicurazioneVolo = assicurazioneVolo;
+	}
+
+	public int getTotaleVolo() {
+		return totaleVolo;
+	}
+
+	public void setTotaleVolo(int totaleVolo) {
+		this.totaleVolo = totaleVolo;
+	}
+
+	public boolean isCheckIn() {
+		return checkIn;
+	}
+
+	public void setCheckIn(boolean checkIn) {
+		this.checkIn = checkIn;
+	}
+	
+	
 }

@@ -63,6 +63,8 @@ public abstract class Persona {
 		
 		listaPassaporti.add(idPassaporto);
 		listaCartaId.add(idCI);
+		
+		Aereoporto.listaPersone.add(this);
 	}
 	
 	
