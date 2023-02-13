@@ -73,11 +73,17 @@ public class Aereo {
 		this.numPosti -= num;
 		return true;
 	}
+
+	
+	public void voloCompletato() {
+		this.voliCompletati += 1;
+	}
 	
 	
 	@Override
 	public String toString() {
 		return this.idAereo + " " + this.modello;
 	}
+	
 	
 }

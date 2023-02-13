@@ -77,6 +77,7 @@ public class Pilota extends Qualificato {
 		return idPilota;
 	}
 
+	
 
 
 	@Override

@@ -21,9 +21,8 @@ public class Volo {
 	private List<Hostess> listaH = new ArrayList<>();
 	
 	private static int count = 1;
-	private LocalDate secondaDataVolo = null;
 	
-	public Volo(CompagnieVolo cVolo, int durataVolo, LocalDate dataPartenza, int maxDurataritardo, Aereo aereo, List<Passeggero> listPas, List<Pilota> listPiloti, List<Hostess> listHostess) throws AirportException {
+	public Volo(CompagnieVolo cVolo, int durataVolo, LocalDate dataPartenza, int maxDurataritardo, Aereo aereo, List<Pilota> listPiloti, List<Hostess> listHostess) throws AirportException {
 		super();
 		
 		if(cVolo == null || durataVolo < 0 || dataPartenza == null || maxDurataritardo < 0 || aereo == null  || listPiloti == null || listHostess == null)
@@ -38,7 +37,6 @@ public class Volo {
 		this.aereo = aereo;
 		this.idAereo = aereo.getIdAereo();
 		
-		this.listPas = listPas;
 		this.listPilota = listPiloti;
 		this.listaH = listHostess;
 		
@@ -47,17 +45,26 @@ public class Volo {
 	}
 	
 	
-	
-	public Volo(CompagnieVolo cVolo, int durataVolo, LocalDate dataPartenza, int maxDurataritardo, Aereo aereo, List<Pilota> listPiloti, List<Hostess> listHostess) throws AirportException {
-		this(cVolo, durataVolo, dataPartenza, maxDurataritardo, aereo, null, listPiloti, listHostess);
+	public void addPasseggeri(Passeggero...lista) {
+		for (Passeggero passeggero : lista) {
+			if(!listPas.contains(passeggero) && this.aereo.setNumPosti(1)) {
+				System.out.println("Passeggero aggiunto");
+				listPas.add(passeggero);
+			}
+				
+		}
 	}
 	
 	
-	public void addPasseggero(Passeggero p) {
-		if(!listPas.contains(p) && this.aereo.setNumPosti(1))
-			System.out.println("Passeggero aggiunto");
-			listPas.add(p);
+	public void addPasseggeri(List<Passeggero> lista) {
+		for (Passeggero passeggero : lista) {
+			if(!listPas.contains(passeggero) && this.aereo.setNumPosti(1)) {
+				System.out.println("Passeggero aggiunto");
+				listPas.add(passeggero);
+			}	
+		}
 	}
+	
 	
 	
 	public void removePasseggero(Passeggero p) {
@@ -69,7 +76,6 @@ public class Volo {
 	
 	public void annullamentoVolo(LocalDate nuovaData) {
 		this.dataPartenza = nuovaData;
-		this.secondaDataVolo = nuovaData;	
 		this.partenza = false;
 		
 //		for (Passeggero passeggero : listPas) {
@@ -102,9 +108,10 @@ public class Volo {
 		}
 		
 		
-		if(flag || this.aereo.isRevisione() || flag2 == false) {
+		if(flag && this.aereo.isRevisione() && flag2 == false) {
 			this.partenza = true;
 			rettificaOrePQualificati();
+			this.aereo.voloCompletato();
 			System.out.println("Volo partito");
 		}else {
 			this.partenza = false;
@@ -166,5 +173,32 @@ public class Volo {
 
 	public String getIdVolo() {
 		return idVolo;
+	}
+	
+
+	
+	
+	public void getAllPasseggeri() {
+		listPas.forEach(System.out::println);
+	}
+	
+	public void getAllPiloti() {
+		listPilota.forEach(System.out::println);
+	}
+	
+	public void getAllHostess() {
+		listaH.forEach(System.out::println);
+	}
+	
+	
+	public void setAllCheckIn() {
+		System.out.println("Check-in effettuato a tutti i passeggeri");
+		listPas.forEach(x -> x.setCheckIn(true));
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "Id volo: " + this.idVolo + "Id aereo: " + this.idAereo + "N passeggeri: " + this.listPas.size() + " partenza: " + this.dataPartenza;
 	}
 }

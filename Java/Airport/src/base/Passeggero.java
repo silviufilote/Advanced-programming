@@ -12,13 +12,11 @@ public class Passeggero extends Persona{
 	private int prezzoBiglietto;
 	private int totaleVolo;
 	private boolean checkIn;
-	
-	private static List<Passeggero> listaPasseggeri = new ArrayList<>();
 	private boolean ritardo;
 	
 	
 	public Passeggero(String nome, String cognome, LocalDate dataDiNascita, String numeroTelefono, String email,
-			String idCI, String idPassaporto, Volo volo, boolean assicurazione, CompagnieVolo compagniaVolo) throws AirportException {
+			String idCI, String idPassaporto, Volo volo, boolean assicurazione) throws AirportException {
 		super(nome, cognome, dataDiNascita, numeroTelefono, email, idCI, idPassaporto);
 		
 		if(volo == null)
@@ -27,21 +25,19 @@ public class Passeggero extends Persona{
 		this.idVolo = volo.getIdVolo();
 		this.volo = volo;
 		this.assicurazioneVolo = assicurazione;
-		this.prezzoBiglietto = compagniaVolo.getCostoBase();
+		this.prezzoBiglietto = volo.getcVolo().getCostoBase();
 		this.checkIn = false;
 		this.ritardo = false;
 		
 		if(assicurazione == false)
-			this.totaleVolo = compagniaVolo.getCostoBase();
+			this.totaleVolo = volo.getcVolo().getCostoBase();
 		else
-			this.totaleVolo = compagniaVolo.getCostoBase() + 120;
-		
-		listaPasseggeri.add(this);
+			this.totaleVolo = volo.getcVolo().getCostoBase() + 120;
 		
 	}
 
 	public Passeggero(String nome, String cognome, LocalDate dataDiNascita, String numeroTelefono, String email,
-			String idCI, Volo volo, boolean assicurazione, CompagnieVolo compagniaVolo) throws AirportException {
+			String idCI, Volo volo, boolean assicurazione) throws AirportException {
 		
 		super(nome, cognome, dataDiNascita, numeroTelefono, email, idCI);
 		
@@ -50,17 +46,14 @@ public class Passeggero extends Persona{
 		
 		this.idVolo = volo.getIdVolo();
 		this.assicurazioneVolo = assicurazione;
-		this.prezzoBiglietto = compagniaVolo.getCostoBase();
+		this.prezzoBiglietto = volo.getcVolo().getCostoBase();
 		this.ritardo = false;
 		this.checkIn = false;
 		
 		if(assicurazione == false)
-			this.totaleVolo = compagniaVolo.getCostoBase();
+			this.totaleVolo = volo.getcVolo().getCostoBase();
 		else
-			this.totaleVolo = compagniaVolo.getCostoBase() + 120;
-		
-		listaPasseggeri.add(this);
-		
+			this.totaleVolo = volo.getcVolo().getCostoBase() + 120;
 	}
 
 	
@@ -69,12 +62,10 @@ public class Passeggero extends Persona{
 		this.ritardo = true;
 	}
 	
-	
-	
-	public void setAllCheckIn() {
-		listaPasseggeri.forEach(x -> x.checkIn = true);
+	public void comunicazioneRitardo(boolean flag) {
+		this.ritardo = flag;
 	}
-	
+
 	
 
 	public String getIdVolo() {
@@ -114,4 +105,8 @@ public class Passeggero extends Persona{
 	}
 	
 	
+	@Override
+	public String toString() {
+		return this.getNome() + " " + this.getCognome();
+	}
 }
