@@ -1,10 +1,14 @@
 # Advanced-programming
 Java, C/C++ and haskell projects
 
+# Java project: bank management
 
-
+```
 g++ Main.cpp .\Account.cpp .\Admin.cpp .\Bancomat.cpp .\Cliente.cpp .\CoordinateBancarie.cpp .\Finanziamento.cpp .\Persona.cpp .\Staff.cpp
+```
 
+
+# C++ project
 
 
 # Haskell project: bank management
