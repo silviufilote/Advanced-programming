@@ -11,6 +11,8 @@ g++ Main.cpp .\Account.cpp .\Admin.cpp .\Bancomat.cpp .\Cliente.cpp .\Coordinate
 
 # C++ project
 
+- qwerqwerqwer
+
 
 # Haskell project: bank management
 Haskell's project gives a list of clients adhering to a banking management system that they are displayed into a list in the form of a tuple. For each
