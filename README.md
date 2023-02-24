@@ -29,6 +29,8 @@ C++ constructs used:
 - Function Template
 - default parameter
 - foreach
+
+[<img alt="alt_text" width="40px" src="general.PNG" />]
   
 Use this command line in order to execute the code:
 ```
