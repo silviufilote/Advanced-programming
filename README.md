@@ -30,7 +30,9 @@ C++ constructs used:
 - default parameter
 - foreach
 
-<img align="center" alt="alt_text" width="70%" src="C++//general.PNG" />
+<p align="center">
+  <img  alt="alt_text" width="70%" src="C++//general.PNG" />
+</p>
   
 Use this command line in order to execute the code:
 ```
