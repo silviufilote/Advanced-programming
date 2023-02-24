@@ -94,7 +94,7 @@ void Admin::viewListaPersone(viewPersona item){
 void Admin::viewAccounts(){
      for (vector<Account*>::iterator it = Account::listaAcc.begin(); it !=  Account::listaAcc.end(); ++it) {
         cout << (*it)->getCliente(this)->getIdCliente() << " " << (*it)->getCliente(this)->getNome() << endl;
-     }
+     };
 }
 
 

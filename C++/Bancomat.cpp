@@ -59,7 +59,7 @@ void Bancomat::preleva(Cliente * const c, opzioniPreleva scelta){
 }
 
 
- void Bancomat::aggiungiContati(Admin * const a, int contanti){
+ void Bancomat::aggiungiContati(Admin * const a, int contanti = 1500){
     if(a != NULL){
         if(this->contantiPresenti + contanti <= Bancomat::maxContanti){
             this->fuoriUso = false;
@@ -96,6 +96,7 @@ void Bancomat::preleva(Cliente * const c, opzioniPreleva scelta){
  int Bancomat::getContantiPresenti(Admin * const a) {
    return this -> contantiPresenti;
  }
+
 
  void Bancomat::setFuoriUso() {
    this -> fuoriUso = true;
