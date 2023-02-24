@@ -10,8 +10,13 @@ g++ Main.cpp .\Account.cpp .\Admin.cpp .\Bancomat.cpp .\Cliente.cpp .\Coordinate
 
 
 # C++ project
-
-- qwerqwerqwer
+C++ constructs used:
+- Inheritance
+- Constructors/Destructors
+- Static methods and variables
+- Containers -> vector<T> and methods
+- const
+- 
 
 
 # Haskell project: bank management
