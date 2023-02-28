@@ -2,8 +2,11 @@
 Java, C/C++ and haskell projects
 
 # Java project: bank management
-
-
+Java constructs used:
+- 
+<p align="center">
+  <img  alt="alt_text" width="70%" src="Java//general.PNG" />
+</p>
 
 
 # C++ project
