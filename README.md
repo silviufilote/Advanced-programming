@@ -64,5 +64,7 @@ g++ Main.cpp .\Account.cpp .\Admin.cpp .\Bancomat.cpp .\Cliente.cpp .\Coordinate
 Haskell's project gives a list of clients adhering to a banking management system that they are displayed into a list in the form of a tuple. For each
 customer/tuple are stored: identifier, customer name and balance. Furthermore there are functions that operate and manipulate the clients list in oder to excute different operations. 
 
-- client = (ID, nome, saldo) = (int, String, int)
-- clients = [(1, "Marcello", 1000), (2, "Martina", 500), (3, "Leonardo", 1500), (4, "Giovanni", 2000)]
+```
+ client = (ID, nome, saldo) = (int, String, int)
+ clients = [(1, "Marcello", 1000), (2, "Martina", 500), (3, "Leonardo", 1500), (4, "Giovanni", 2000)]
+```
