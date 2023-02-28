@@ -68,9 +68,11 @@ public class Volo {
 	
 	
 	public void removePasseggero(Passeggero p) {
-		if(listPas.contains(p))
+		if(listPas.contains(p)){
 			System.out.println("Passeggero rimosso");
 			listPas.remove(p);
+			this.aereo.setNumPosti(-1);
+		}	
 	}
 	
 	
