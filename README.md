@@ -30,28 +30,7 @@ Java constructs used:
 C++ constructs used:
 <div align="center">
 
-- &bull; Ereditarietà
-- &bull; Costruttori/distruttori
-- &bull; Variabili e metodi statici
-- &bull; Utilizzo di const
-- &bull; Iterators
-- &bull; Delete/free
-- &bull; New/malloc
-- &bull; Overload
-- &bull; Override, virtual, override
-- &bull; Costruttore friend
-- &bull; Enum e casting
-- &bull; Modificatori di accessibilità
-- &bull; Suddivisione interfaccia, implementazione
-- &bull; Final
-- &bull; Costanti
-- &bull; Eccezioni
-- &bull; Smart pointers
-- &bull; List inizializzator
-- &bull; Function Template
-- &bull; Default parameter
-- &bull; Foreach
-- &bull; Containers &rarr; `vector<T>` e metodi a loro associati
+&bull; Ereditarietà &bull; Costruttori/distruttori &bull; Variabili e metodi statici &bull; Utilizzo di const &bull; Iterators &bull; Delete/free &bull; New/malloc &bull; Overload &bull; Override, virtual, override &bull; Costruttore friend &bull; Enum e casting &bull; Modificatori di accessibilità &bull; Suddivisione interfaccia, implementazione &bull; Final &bull; Costanti &bull; Eccezioni &bull; Smart pointers &bull; List inizializzator &bull; Function Template &bull; Default parameter &bull; Foreach &bull; Containers &rarr; `vector<T>` e metodi a loro associati
 
 </div>
 
