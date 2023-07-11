@@ -30,7 +30,7 @@ Java constructs used:
 C++ constructs used:
 <div align="center">
 
-&bull; Inheritance &bull; Constructors/destructors &bull; Static variables and methods &bull; Usage of const &bull; Iterators &bull; Delete/free &bull; New/malloc &bull; Overload &bull; Override, virtual, override &bull; Friend constructor &bull; Enum and casting &bull; Accessibility modifiers &bull; Interface and implementation separation &bull; Final &bull; Constants &bull; Exceptions &bull; Smart pointers &bull; List initializer &bull; Function Template &bull; Default parameter &bull; Foreach &bull; Containers &rarr; `vector<T>` and associated methods
+&bull; Inheritance &bull; Constructors/destructors &bull; Static variables and methods &bull; Usage of const &bull; Iterators &bull; Delete/free &bull; New/malloc &bull; Overload <br> &bull; Override, virtual, override &bull; Friend constructor &bull; Enum and casting &bull; Accessibility modifiers &bull; Interface and implementation separation &bull; Final &bull; Constants &bull; Exceptions &bull; Smart pointers &bull; List initializer &bull; Function Template &bull; Default parameter &bull; Foreach &bull; Containers &rarr; `vector<T>` and associated methods
 
 </div>
 
