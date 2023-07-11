@@ -56,8 +56,7 @@ C++ constructs used:
   
 Use this command line in order to execute the code:
 ```
-g++ Main.cpp .\Account.cpp .\Admin.cpp .\Bancomat.cpp .\Cliente.cpp .\CoordinateBancarie.cpp 
-.\Finanziamento.cpp .\Persona.cpp .\Staff.cpp
+g++ Main.cpp .\Account.cpp .\Admin.cpp .\Bancomat.cpp .\Cliente.cpp .\CoordinateBancarie.cpp .\Finanziamento.cpp .\Persona.cpp .\Staff.cpp
 ```
 
 # Haskell project: bank management
