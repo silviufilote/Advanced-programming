@@ -28,27 +28,32 @@ Java constructs used:
 
 # C++ project
 C++ constructs used:
-- Inheritance
-- Constructors/Destructors
-- Static methods and variables
-- Containers -> vector<T> and methods
-- const
-- Iterators
-- Delete/free
-- New/malloc
-- function overload
-- function overriding, static, override
-- friend
-- enum and casting
-- Accessibility modifiers
-- splitting interface .h and implementation .cpp
-- final 
-- exceptions
-- smart pointers
-- list inizializator
-- Function Template
-- default parameter
-- foreach
+<div align="center">
+
+- &bull; Ereditarietà
+- &bull; Costruttori/distruttori
+- &bull; Variabili e metodi statici
+- &bull; Utilizzo di const
+- &bull; Iterators
+- &bull; Delete/free
+- &bull; New/malloc
+- &bull; Overload
+- &bull; Override, virtual, override
+- &bull; Costruttore friend
+- &bull; Enum e casting
+- &bull; Modificatori di accessibilità
+- &bull; Suddivisione interfaccia, implementazione
+- &bull; Final
+- &bull; Costanti
+- &bull; Eccezioni
+- &bull; Smart pointers
+- &bull; List inizializzator
+- &bull; Function Template
+- &bull; Default parameter
+- &bull; Foreach
+- &bull; Containers &rarr; `vector<T>` e metodi a loro associati
+
+</div>
 
 <p align="center">
   <img  alt="alt_text" width="70%" src="C++//general.PNG" />
