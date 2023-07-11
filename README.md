@@ -5,7 +5,7 @@ Java, C/C++ and haskell projects
 Java constructs used:
 <div align="center">
 
-&bull; Exceptions &bull; Final &bull; Static &bull; Getters / Setters &bull; Lambda Functions &bull; Enum &bull; Overload &bull; Override &bull; Accessibility Modifiers &bull; Abstract <br> &bull; Facade Pattern &bull; Singleton Pattern &bull; Iterators &bull; Generic Methods &bull; Inheritance &bull; Varargs &bull; Java Collections Framework &rarr; List
+&bull; Exceptions &bull; Final &bull; Static &bull; Getters / Setters &bull; Lambda Functions &bull; Enum &bull; Overload &bull; Override <br> &bull; Accessibility Modifiers &bull; Abstract <br> &bull; Facade Pattern &bull; Singleton Pattern &bull; Iterators &bull; Generic Methods &bull; Inheritance &bull; Varargs &bull; Java Collections Framework &rarr; List
 
 
 </div>
