@@ -3,23 +3,12 @@ Java, C/C++ and haskell projects
 
 # Java project: bank management
 Java constructs used:
-- exceptions
-- final
-- static
-- getters / setters
-- lambda functions
-- enum
-- overload
-- override
-- Accessibility modifiers
-- abstract
-- facede pattern
-- singleton pattern 
-- iterators
-- generic methods
-- Inheritance
-- varargs
-- Java Collections Framework -> list
+<div align="center">
+
+&bull; Exceptions &bull; Final &bull; Static &bull; Getters / Setters &bull; Lambda Functions &bull; Enum &bull; Overload &bull; Override &bull; Accessibility Modifiers &bull; Abstract &bull; Facade Pattern &bull; Singleton Pattern &bull; Iterators &bull; Generic Methods &bull; Inheritance &bull; Varargs &bull; Java Collections Framework &rarr; List
+
+</div>
+
 
 <p align="center">
   <img  alt="alt_text" width="70%" src="Java//general.PNG" />
